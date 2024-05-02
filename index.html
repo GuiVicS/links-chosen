@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha onde ir!</title>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"> <!-- Link para o Font Awesome Pro -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/thin.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS personalizado -->
+    <link rel="icon" href="favicon.png"> <!-- Ícone da aba do navegador -->
+    <!-- Meta tags adicionais, como descrição, autor, palavras-chave, etc. -->
+    <meta name="description" content="esta é uma página de itermediação">
+    <meta name="robots" content="index, follow">
+<!-- Permitir indexação e seguir links -->
+    <!-- Links para fontes, ícones, etc. -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap">
+<style>
+body {
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin: 0;
+  background: linear-gradient(to top, #003686, #202020);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Garante que a página ocupe toda a altura da viewport */
+}
+
+.header {
+  text-align: center;
+  padding: 10px;
+  padding-top: 25px;
+  box-sizing: border-box;
+}
+
+.logo {
+    margin-left:10px;
+  width: 100%;
+  max-width: 200px;
+  animation: pulse 2s infinite;
+}
+
+.btns {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  width: 110%;
+  padding: 15px 0;
+  padding-bottom: 55px;
+  box-sizing: border-box;
+}
+
+.btn {
+  width: 100%; /* Ajustado para ocupar toda a largura disponível */
+  max-width: 300px;
+  height: 42px;
+  line-height: 40px;
+  border-radius: 10px;
+  background: rgb(0, 102, 255);
+  color: white;
+  text-decoration: none;
+  margin: 8px 0; /* Ajustado para dar um espaçamento uniforme entre os botões */
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 0 25px #0053cc;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+    box-shadow: 0 0 5px #0053cc,
+              0 0 25px #0053cc,
+              0 0 50px #0053cc,
+              0 0 100px #0053cc;
+  background: black;
+  color: #0053cc;
+  transform: scale(1.08);
+  margin:10 0;
+}
+
+.fa-fw {
+  border-radius: 10px 0px 0px 10px;
+  border-right: 2px solid #0053cc;
+  padding: 8px 4px;
+  color: black;
+  background: white;
+  margin-right: 6px;
+  font-size: 26px;
+  float: left;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+</style>
+</head>
+<body>
+    <div class="centro">
+        <div class="header">
+            <img class="logo" src="logo.png">
+        </div>
+        <div class="btns">
+            <a href="#" class="btn"><i class="fas fa-globe fa-fw"></i>Site</a>
+            <a href="#" class="btn"><i class="fab fa-behance-square fa-fw"></i>Behance</a>
+            <a href="#" class="btn"><i class="fab fa-linkedin fa-fw"></i>Linkedin</a>
+            <a href="#" class="btn"><i class="fab fa-youtube fa-fw"></i>Youtube</a>
+            <a href="#" class="btn"><i class="fab fa-whatsapp-square fa-fw"></i>Whatsapp</a>
+        </div>
+    </div>
+</body>
+</html>
