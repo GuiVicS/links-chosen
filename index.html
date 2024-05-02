@@ -3,124 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escolha onde ir!</title>
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"> <!-- Link para o Font Awesome Pro -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"> 
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/solid.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/regular.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/thin.css">
-    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS personalizado -->
-    <link rel="icon" href="favicon.png"> <!-- Ícone da aba do navegador -->
-    <!-- Meta tags adicionais, como descrição, autor, palavras-chave, etc. -->
-    <meta name="description" content="esta é uma página de itermediação">
-    <meta name="robots" content="index, follow">
-<!-- Permitir indexação e seguir links -->
-    <!-- Links para fontes, ícones, etc. -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap">
-<style>
-body {
-  overflow: hidden;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  margin: 0;
-  background: linear-gradient(to top, #003686, #202020);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Garante que a página ocupe toda a altura da viewport */
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Escolha um Caminho!</title>
+    <style>
+        body {
+            font-family: Montserrat, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #202020;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        .logo {
+            width: 40%;
+            max-width: 200px;
+            margin-bottom: 30px;
+        }
+        .btn {
+            font-weight: 600;
+            height: 42px;
+            display: block;
+            width: 90%;
+            max-width: 300px;
+            margin: 20px auto;
+            background-color: #0053cc;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #0053cc;
+            transition: all 0.3s ease;
+            line-height: 42px;
+}
+        .btn:hover {
+            box-shadow: 0 0 5px #0053cc, 0 0 25px #0053cc, 0 0 50px #0053cc, 0 0 100px #0053cc;
+            transform: scale(1.08);
+            background-color: #000;
+            color:#fff;
+        }
+        .fa-fw {
+            border-radius: 10px 0 0 10px;
+            padding:8px;
+            background:#fff;
+            border-right: 2px solid #0053cc;
+            color: black;
+            margin-right: 6px;
+            font-size: 26px;
+            float: left;
+
 }
 
-.header {
-  text-align: center;
-  padding: 10px;
-  padding-top: 25px;
-  box-sizing: border-box;
+        /* Estilo para a barra de rolagem */
+::-webkit-scrollbar {
+    width: 5px; /* Largura da barra de rolagem */
+    border-radius: 10px; /* Borda arredondada */
 }
 
-.logo {
-    margin-left:10px;
-  width: 100%;
-  max-width: 200px;
-  animation: pulse 2s infinite;
+/* Estilo para a alça da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background-color: #0053cc; /* Cor da barra de rolagem */
+    border-radius: 10px; /* Borda arredondada */
 }
 
-.btns {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 300px;
-  width: 110%;
-  padding: 15px 0;
-  padding-bottom: 55px;
-  box-sizing: border-box;
+/* Estilo para a trilha da barra de rolagem */
+::-webkit-scrollbar-track {
+    background-color: #000; /* Cor de fundo da barra de rolagem */
+    border-radius: 10px; /* Borda arredondada */
 }
 
-.btn {
-  width: 100%; /* Ajustado para ocupar toda a largura disponível */
-  max-width: 300px;
-  height: 42px;
-  line-height: 40px;
-  border-radius: 10px;
-  background: rgb(0, 102, 255);
-  color: white;
-  text-decoration: none;
-  margin: 8px 0; /* Ajustado para dar um espaçamento uniforme entre os botões */
-  text-align: center;
-  justify-content: center;
-  box-shadow: 0 0 25px #0053cc;
-  transition: all 0.3s ease;
+/* Estilo para os cantos da barra de rolagem */
+::-webkit-scrollbar-corner {
+    background-color: transparent; /* Cor dos cantos da barra de rolagem */
 }
 
-.btn:hover {
-    box-shadow: 0 0 5px #0053cc,
-              0 0 25px #0053cc,
-              0 0 50px #0053cc,
-              0 0 100px #0053cc;
-  background: black;
-  color: #0053cc;
-  transform: scale(1.08);
-  margin:10 0;
-}
 
-.fa-fw {
-  border-radius: 10px 0px 0px 10px;
-  border-right: 2px solid #0053cc;
-  padding: 8px 4px;
-  color: black;
-  background: white;
-  margin-right: 6px;
-  font-size: 26px;
-  float: left;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.08);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-</style>
+    </style>
 </head>
 <body>
-    <div class="centro">
-        <div class="header">
-            <img class="logo" src="logo.png">
-        </div>
-        <div class="btns">
-            <a href="#" class="btn"><i class="fas fa-globe fa-fw"></i>Site</a>
-            <a href="#" class="btn"><i class="fab fa-behance-square fa-fw"></i>Behance</a>
-            <a href="#" class="btn"><i class="fab fa-linkedin fa-fw"></i>Linkedin</a>
-            <a href="#" class="btn"><i class="fab fa-youtube fa-fw"></i>Youtube</a>
-            <a href="#" class="btn"><i class="fab fa-whatsapp-square fa-fw"></i>Whatsapp</a>
-        </div>
+    <div class="container">
+        <img class="logo" src="logo.png" alt="Logo da Empresa">
+        <a class="btn" href="https://www.site.com"><i class="fas fa-globe fa-fw"></i>  Website</a>
+        <a class="btn" href="https://linkedin.com/empresa"><i class="fab fa-linkedin fa-fw"></i>  LinkedIn</a>
+        <a class="btn" href="https://www.youtube.com/c/empresa"><i class="fab fa-youtube fa-fw"></i>  YouTube</a>
+        <a class="btn" href="https://www.github.com/empresa"><i class="fab fa-behance-square fa-fw"></i>  GitHub</a>
+        <a class="btn" href="https://www.behance.net/empresa"><i class="fab fa-linkedin fa-fw"></i>  Behance</a>
     </div>
 </body>
 </html>
