@@ -11,7 +11,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow-x: hidden;
-    height: 100vh; /* Define a altura do corpo para ocupar toda a tela */
+    width: 100vw;
 }
 .container {
     max-width: 600px;
