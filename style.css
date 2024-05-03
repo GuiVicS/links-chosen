@@ -1,0 +1,196 @@
+body {
+    animation: pulse 2s infinite;
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(0, #0053cc, #000000);
+    background-image: url('fundo.jpg');
+    background-size: cover;
+    background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+overflow-x: hidden;
+}
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+.logo {
+    border-radius: 100%;
+    width: 40%;
+    max-width: 200px;
+    margin-bottom: -2px;
+    animation: pulsarluze 2s infinite;
+}
+.btn {
+    font-weight: 600;
+    height: 42px;
+    display: block;
+    width: 75%;
+    margin: 20px auto;
+    background-color: #0053cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 14px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 15px #0053cc;
+    transition: all 0.3s ease;
+    line-height: 42px;
+}
+.btn:hover {
+    box-shadow: 0 0 5px #0053cc, 0 0 25px #0053cc, 0 0 50px #0053cc, 0 0 100px #0053cc;
+    transform: scale(1.08);
+    background-color: #000;
+    color:#fff;
+}
+.icone {
+    border-radius: 10px 0 0 10px;
+    padding:8px;
+    background:#fff;
+    border-right: 2px solid #0053cc;
+    color: black;
+    margin-right: 6px;
+    font-size: 26px;
+    float: left;
+}
+
+.mensagem{  
+margin-top: 30px;
+background:#0068ff;
+box-shadow: 0px 4px 8px #00000080;
+color:white;
+padding: 10px 25px;
+border-radius: 20px;
+width: 70%;
+font-size: 15px;
+text-align: left;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 0px;
+}
+
+/* Estilo para a barra de rolagem */
+::-webkit-scrollbar {
+width: 5px; /* Largura da barra de rolagem */
+border-radius: 10px; /* Borda arredondada */
+}
+
+/* Estilo para a alça da barra de rolagem */
+::-webkit-scrollbar-thumb {
+background-color: #0053cc; /* Cor da barra de rolagem */
+border-radius: 10px; /* Borda arredondada */
+}
+
+/* Estilo para a trilha da barra de rolagem */
+::-webkit-scrollbar-track {
+background-color: #000; /* Cor de fundo da barra de rolagem */
+border-radius: 10px; /* Borda arredondada */
+}
+
+/* Estilo para os cantos da barra de rolagem */
+::-webkit-scrollbar-corner {
+background-color: transparent; /* Cor dos cantos da barra de rolagem */
+}
+.blue{
+color:#0068ff;
+}
+.user{
+width: 75%;
+
+}
+.line{
+background: #0068ff;
+border-radius: 20px;
+height: 5px;
+width: 80%;
+}
+
+.moedas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+.moeda {
+    opacity:20%;
+    position: absolute;
+    animation: flutuar 3s infinite ease-in-out alternate;
+}
+.um {
+    width: 60px;
+    top: 17%;
+    left: 20%;
+}
+.dois {
+    width: 100px;
+    top: 40%;
+    left: 80%;
+}
+.tres {
+    width: 100px;
+    top: 60%;
+    left: 1%;
+}
+.quatro {
+    width: 100px;
+    top: 90%;
+    left: 90%;
+}
+.cinco {
+    
+    width: 250px;
+    top: 100%;
+    left: 0%;
+}
+.seis {
+    width: 200px;
+    top: 10%;
+    left: 90%;
+}
+.sete {
+    width: 100px;
+    top: 90%;
+    left: 90%;
+}
+
+
+/*animações*/
+@keyframes flutuar {
+    0% {
+        transform: translateY(0) translateX(-2%);
+    }
+    50% {
+        transform: translateY(-5px) translateX(2%);
+    }
+    100% {
+        transform: translateY(0) translateX(-2%);
+    }
+}
+@keyframes pulsarluze {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 102, 255, 0.534); /* Cor e intensidade do brilho */
+      }
+      50% {
+        box-shadow: 0 0 20px 10px rgba(0, 102, 255, 0.692); /* Espalhe o brilho */
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(0, 104, 255, 0.5); /* Cor e intensidade do brilho */
+      }
+    }
+
+    @keyframes pulseluz {
+        0% {
+          box-shadow: inset 0 0 0 0 rgba(0, 104, 255, 0.5); /* Sombra interna sem intensidade */
+        }
+        50% {
+          box-shadow: inset 0 0 20px 10px rgba(0, 104, 255, 0); /* Espalhe a sombra interna */
+        }
+        100% {
+          box-shadow: inset 0 0 0 0 rgba(0, 104, 255, 0.5); /* Sombra interna sem intensidade */
+        }
+      }
+  
