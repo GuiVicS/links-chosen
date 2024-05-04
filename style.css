@@ -5,9 +5,12 @@
         background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-position: fixed;
     max-width: 1080px ;
     max-height: 1920px;
+    }
+    .moeda{
+     display: none;
     }
 }
 
