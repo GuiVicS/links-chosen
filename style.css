@@ -1,3 +1,14 @@
+@media only screen and (max-width: 768px) {
+    body{
+        background-image: url('fundo-mobile.jpg');
+        background-size: cover;
+        background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+}
+
 body {
     animation: pulse 2s infinite;
     font-family: Montserrat, sans-serif;
@@ -7,11 +18,10 @@ body {
     background-image: url('fundo.jpg');
     background-size: cover;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    overflow-x: hidden;
-    width: 100vw;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+overflow-x: hidden;
 }
 .container {
     max-width: 600px;
