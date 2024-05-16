@@ -172,6 +172,19 @@ width: 80%;
 }
 
 
+.desenvolvido{
+  display:flex;
+  border:1px solid white;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px); 
+  padding:5px;
+  width:300px;
+  border-radius:15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+    margin:20px;
+}
+
+
 /*animações*/
 @keyframes flutuar {
     0% {
