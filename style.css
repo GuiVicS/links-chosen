@@ -91,7 +91,7 @@ body {
     border-radius: 50px;
     transition: 0.5s ease;
     user-select: none;
-    color: var(--primary-color);
+    color: var(--text-color);
     box-shadow: 0 0 5px var(--shadow-color);
 }
 
