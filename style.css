@@ -1,231 +1,196 @@
-@media only screen and (max-width: 768px) {
-    body{
-        background-image: url('fundo-mobile.jpg');
-        background-size: cover;
-        background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position: fixed;
-    max-width: 1080px ;
-    max-height: 1920px;
-    }
-    .moeda{
-     display: none;
-    }
+:root {
+    --primary-color: #00f590;
+    --background-color: #033746;
+    --background-degrade:linear-gradient(310deg, rgba(11,227,201,1) 0%, rgba(0,245,144,1) 100%);;
+    --text-color: #ffffff;
+    --secondary-text-color: #b3b3b3;
+    --border-color: #00f590;
+    --shadow-color: rgba(0, 245, 144, 0.5);
+    --button-hover-bg: #00d47d;
+    --button-hover-shadow: rgba(0, 245, 144, 0.75);
 }
 
 body {
-    font-family: Montserrat, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
-    background: linear-gradient(0, #0053cc, #000000);
-    background-image: url('fundo.jpg');
-    background-size: cover;
-    background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-background-attachment: fixed;
-overflow-x: hidden;
 }
-.desenvolvido{
-  display:flex;
-  border:1px solid white;
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px); 
-  padding:5px;
-  width:300px;
-  border-radius:15px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
-    margin:20px;
+@media(max-width:600px){
+  .container{
+    width: 100% !important;
+  }
 }
-.desenvolvido img{
-width:90%;
+.container {
+    text-align: center;
+    width: 80%;
+    max-width:500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profile{
+  width:100%;
+  text-align:center;
+}
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid #0be3c9;
+    box-shadow: 0 0 10px #0be3caa6;
 }
 
-.container {
-    max-width: 600px;
-    margin: 50px auto;
-    text-align: center;
+.name {
+    font-size: 22px;
+    font-weight: bold;
 }
-.logo {
-    border-radius: 100%;
-    width: 40%;
-    max-width: 200px;
-    margin-bottom: -2px;
-    animation: pulsarluze 2s infinite;
+
+.description {
+    font-size: 14px;
+    color: var(--secondary-text-color);
+}
+
+.badges {
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.badges i {
+    font-size: 24px;
+    color: var(--primary-color);
+}
+.links{
+  width:90%;
+  max-width:400px;
 }
 .btn {
-    font-weight: 600;
-    height: 42px;
-    display: block;
-    width: 75%;
-    margin: 20px auto;
-    background-color: #0053cc;
-    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-block: 15px;
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
     text-decoration: none;
-    border-radius: 14px;
-    border: 3px solid #fff;
-    box-shadow: 0 0 15px #0053cc;
-    transition: all 0.3s ease;
-    line-height: 42px;
-}
-.btn:hover {
-    box-shadow: 0 0 5px #0053cc, 0 0 25px #0053cc, 0 0 50px #0053cc, 0 0 100px #0053cc;
-    transform: scale(1.08);
-    background-color: #000;
-    color:#fff;
-}
-.icone {
-    border-radius: 10px 0 0 10px;
-    padding:8px;
-    background:#fff;
-    border-right: 2px solid #0053cc;
-    color: black;
-    margin-right: 6px;
-    font-size: 26px;
-    float: left;
+    background: transparent;
+    border: 2px solid var(--border-color);
+    border-radius: 50px;
+    transition: 0.5s ease;
+    user-select: none;
+    color: var(--primary-color);
+    box-shadow: 0 0 5px var(--shadow-color);
 }
 
-.mensagem{  
-margin-top: 30px;
-background:#20202080;
-box-shadow: 0px 4px 8px #00000080;
-color:white;
-padding: 10px 25px;
-border-radius: 20px;
-width: 70%;
-font-size: 15px;
-text-align: left;
-font-weight: 500;
-letter-spacing: 0px;
+.btn i {
+    margin-right: 10px;
 }
 
-.selo{
-width:70px;
+.btn:hover, .btn:focus {
+    color: var(--text-color);
+    background: var(--background-degrade);
+    border: 2px solid rgba(0, 0, 0, 0);
+    box-shadow: 0 0 15px var(--button-hover-shadow);
 }
 
-/* Estilo para a barra de rolagem */
-::-webkit-scrollbar {
-width: 5px; /* Largura da barra de rolagem */
-border-radius: 10px; /* Borda arredondada */
+hr {
+    width: 80%;
+    border: 0.5px solid var(--border-color);
+    margin: 20px 0;
 }
 
-/* Estilo para a alça da barra de rolagem */
-::-webkit-scrollbar-thumb {
-background-color: #0053cc; /* Cor da barra de rolagem */
-border-radius: 10px; /* Borda arredondada */
+.footer {
+    font-size: 12px;
+    color: var(--secondary-text-color);
+    text-align: center;
 }
 
-/* Estilo para a trilha da barra de rolagem */
-::-webkit-scrollbar-track {
-background-color: #000; /* Cor de fundo da barra de rolagem */
-}
-
-/* Estilo para os cantos da barra de rolagem */
-::-webkit-scrollbar-corner {
-background-color: transparent; /* Cor dos cantos da barra de rolagem */
-}
-.blue{
-color:#0068ff;
-}
-.user{
-width: 75%;
-
-}
-.line{
-background: #0068ff;
-border-radius: 20px;
-height: 5px;
-width: 80%;
-}
-
-.moedas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-}
-.moeda {
-    opacity:20%;
-    position: absolute;
-    animation: flutuar 3s infinite ease-in-out alternate;
-}
-.um {
+/* Estilos do botão de compartilhamento */
+#shareButton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
     width: 60px;
-    top: 17%;
-    left: 20%;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 997;
 }
-.dois {
-    width: 100px;
-    top: 40%;
-    left: 80%;
+
+#shareButton i {
+    color: var(--background-color);
 }
-.tres {
-    width: 100px;
-    top: 60%;
-    left: 1%;
+
+#shareButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }
-.quatro {
-    width: 100px;
-    top: 90%;
-    left: 90%;
+
+/* Estilos do popup */
+#popup-share {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    max-width: 90%;
+    width: 400px;
 }
-.cinco {
-    
-    width: 250px;
-    top: 100%;
-    left: 0%;
+
+#popup-share.show {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
 }
-.seis {
-    width: 200px;
+
+/* Imagens Flutuantes no Fundo */
+.floating-img {
+    position: absolute;
+    width: 150px;
+    animation: floatAnimation 5s infinite alternate ease-in-out;
+}
+
+#floating-img-1 {
     top: 10%;
-    left: 90%;
-}
-.sete {
-    width: 100px;
-    top: 90%;
-    left: 90%;
+    left: 5%;
 }
 
+#floating-img-2 {
+    bottom: 10%;
+    right: 5%;
+}
 
-
-
-
-/*animações*/
-@keyframes flutuar {
+@keyframes floatAnimation {
     0% {
-        transform: translateY(0) translateX(-2%);
-    }
-    50% {
-        transform: translateY(-5px) translateX(2%);
+        transform: translateY(0px);
     }
     100% {
-        transform: translateY(0) translateX(-2%);
+        transform: translateY(20px);
     }
 }
-@keyframes pulsarluze {
-    0% {
-        box-shadow: 0 0 0 0 rgba(0, 102, 255, 0.534); /* Cor e intensidade do brilho */
-      }
-      50% {
-        box-shadow: 0 0 20px 10px rgba(0, 102, 255, 0.692); /* Espalhe o brilho */
-      }
-      100% {
-        box-shadow: 0 0 0 0 rgba(0, 104, 255, 0.5); /* Cor e intensidade do brilho */
-      }
-    }
-
-    @keyframes pulseluz {
-        0% {
-          box-shadow: inset 0 0 0 0 rgba(0, 104, 255, 0.5); /* Sombra interna sem intensidade */
-        }
-        50% {
-          box-shadow: inset 0 0 20px 10px rgba(0, 104, 255, 0); /* Espalhe a sombra interna */
-        }
-        100% {
-          box-shadow: inset 0 0 0 0 rgba(0, 104, 255, 0.5); /* Sombra interna sem intensidade */
-        }
-      }
-  
